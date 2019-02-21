@@ -1,4 +1,5 @@
 @import './layout.scss';
+@import './variable.scss';
 
 @mixin btn($size:14px, $color: #fff, $bgColor:#f04752, $padding: 5px, $bdRadius:5px) {
   padding: $padding;
@@ -24,9 +25,7 @@
     height: $height;
     line-height: $height;
     padding: $padding;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    @include ellipsis;
     text-align: center;
     color: $color;
     font-size: $fontSize;

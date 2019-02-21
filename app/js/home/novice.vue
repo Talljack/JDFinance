@@ -34,6 +34,7 @@ export default {
 </script>
 <style lang="scss" module>
   @import '../../css/element.scss';
+  @import '../../css/variable.scss';
   .panel {
     @include panel;
     >h4 {
@@ -79,9 +80,7 @@ export default {
             }
             h4 {
               text-align: left;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
+              @include ellipsis;
             }
             img {
               float: right;
