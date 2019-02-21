@@ -1,8 +1,8 @@
 <template>
   <Panel title="公司信息" :class="$style.panel">
     <ul :class="$style.content">
-      <li>
-        <img
+      <li >
+        <img v-if="show"
           src="//img12.360buyimg.com/jrpmobile/jfs/t2842/350/3035567089/14791/5f6ff93d/577cf395N31e76288.png?width=1125&height=252"
         >
       </li>
@@ -37,6 +37,9 @@
 import Panel from "../core/panel";
 export default {
   name: "Footer",
+  props: {
+    show: Boolean,
+  },
   components: {
     Panel
   }
