@@ -36,13 +36,14 @@ export default {
   @import '../../css/element.scss';
   .panel {
     @include panel;
-    background: #fff;
     &>h4 {
       display: none;
     }
     .content {
-      padding: 10px;
-      margin-top: 100px;
+      margin-top: 120px;
+      img {
+        width: 100%;
+      }
     }
   }
 </style>
