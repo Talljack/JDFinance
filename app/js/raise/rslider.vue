@@ -30,17 +30,16 @@ export default {
 }
 </script>
 <style lang="scss">
+  @import '../../css/variable.scss';
   .swiper-container {
     height: 72px;
     .swiper-slide {
       font-family: PingFangSC-Medium;
       font-size: 28px;
       color: #333;
-      overflow: hidden;
       width: 380px;
       padding-right: 30px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      @include ellipsis;
       position: relative;
       em {
         position: absolute;

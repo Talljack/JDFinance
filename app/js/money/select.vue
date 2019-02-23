@@ -45,6 +45,7 @@ export default {
 </script>
 <style lang="scss" module>
   @import '../../css/element.scss';
+  @import '../../css/variable.scss';
   .panel {
     @include panel;
     &>h4 {
@@ -108,18 +109,14 @@ export default {
             line-height: 58px;
             color: #ff5155;
             margin-top: 10px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            @include ellipsis;
           }
           &:last-of-type {
             font-size: 24px;
             height: 34px;
             line-height: 34px;
             color: #999;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            @include ellipsis;
           }
         }
       }

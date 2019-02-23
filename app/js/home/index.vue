@@ -23,6 +23,7 @@ import Life from './life';
 import Footer from '../public/footer';
 import Navbar from '../public/navbar';
 export default {
+  name: 'Home',
   components: {
     Header,
     Slider,

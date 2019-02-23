@@ -45,6 +45,7 @@ export default {
 </script>
 <style lang="scss" module>
   @import '../../css/element.scss';
+  @import '../../css/variable.scss';
   .panel {
     @include panel;
     .content {
@@ -103,18 +104,14 @@ export default {
             height: 58px;
             line-height: 58px;
             color: #ff5155;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            @include ellipsis;
           }
           &:nth-child(3) {
             font-size: 24px;
             height: 34px;
             line-height: 34px;
             color: #999;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            @include ellipsis;
           }
         }
       }

@@ -47,6 +47,7 @@ export default {
 </script>
 <style lang="scss" module>
 @import "../../css/element.scss";
+@import '../../css/variable.scss';
 .panel {
   @include panel;
   & > h4 {
@@ -81,9 +82,7 @@ export default {
             display: blcok;
             color: #999;
             margin-top: 12px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+            @include ellipsis;
           }
         }
       }

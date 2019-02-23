@@ -36,6 +36,7 @@ export default {
 </script>
 <style lang="scss" module>
   @import '../../css/element.scss';
+  @import '../../css/variable.scss';
   .panel {
     @include panel;
     .content {
@@ -55,9 +56,7 @@ export default {
           font-size: 26px;
           margin-bottom: 28px;
           color: #666;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
+          @include ellipsis;
         }
         &:nth-child(2) {
           p{

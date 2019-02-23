@@ -14,6 +14,7 @@
 <script>
 import Slider from '../core/slider';
 export default {
+  name: 'Hslider',
   components: {
     Slider,
   },
